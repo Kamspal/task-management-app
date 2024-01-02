@@ -127,6 +127,7 @@ class TaskController extends Controller
         return response()->json(['success' => true]);
     }
 
+    // To show tasks with projects
     public function projectsWithTasks() {
 
         $projects = Project::all();
