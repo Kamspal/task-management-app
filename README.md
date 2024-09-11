@@ -25,4 +25,31 @@ This is a simple task management application built with the Laravel framework. U
 git clone https://github.com/yourusername/your-repository-name.git
 cd your-repository-name
 
+2. Install Dependencies
+- composer install
+- npm install
 
+3. Set Up Environment Variables
+cp .env.example .env
+
+4. Open the .env file and update the database credentials:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
+5. Generate Application Key:
+- php artisan key:generate
+
+6. Run Migrations
+This will create the necessary database tables:
+- php artisan migrate
+
+Compile Frontend Assets
+-npm run dev
+
+7. Serve the Application
+- php artisan serve
